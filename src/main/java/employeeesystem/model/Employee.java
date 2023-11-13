@@ -9,7 +9,7 @@ import org.springframework.lang.NonNull;
 @Table(name = "EmpDetails")
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @NonNull
     private String name;
